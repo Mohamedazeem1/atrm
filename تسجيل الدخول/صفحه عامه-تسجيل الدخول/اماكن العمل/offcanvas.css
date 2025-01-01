@@ -1,0 +1,190 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 56px;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.login{
+  text-decoration: none;
+  color: azure;
+  padding: 10px;
+  background-color:gray;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+}
+
+.login:hover{
+  color: aquamarine;
+}
+
+/* 111111111111111 */
+
+
+body {
+  background: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.stats-card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+}
+
+.card-hover-primary:hover {
+  background: linear-gradient(45deg, #4e73df, #224abe);
+}
+
+.card-hover-success:hover {
+  background: linear-gradient(45deg, #1cc88a, #169a6b);
+}
+
+.card-hover-info:hover {
+  background: linear-gradient(45deg, #36b9cc, #258391);
+}
+
+.card-hover-warning:hover {
+  background: linear-gradient(45deg, #f6c23e, #dda20a);
+}
+
+.stats-card:hover .text-primary,
+.stats-card:hover .text-success,
+.stats-card:hover .text-info,
+.stats-card:hover .text-warning,
+.stats-card:hover .text-muted,
+.stats-card:hover .card-title {
+  color: white !important;
+}
+
+.icon-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  background: rgba(0, 0, 0, .05);
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover .icon-circle {
+  background: rgba(255, 255, 255, .2);
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, .05);
+}
+
+.progress-bar {
+  border-radius: 4px;
+}
+
+.stat-change {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.trend-icon {
+  font-size: 0.8rem;
+}
+
+.mini-chart {
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.chart-bar {
+  flex: 1;
+  background: rgba(0, 0, 0, .05);
+  border-radius: 3px 3px 0 0;
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover .chart-bar {
+  background: rgba(255, 255, 255, .2);
+}
